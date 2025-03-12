@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>HW-Tailwind</title>
+</head>
+<body>
+  <nav class="flex items-center justify-between p-6 bg-sky-800">
+
+  <img class="flex w-28 h-12" src="data:image/png;base64,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" height="" />
+  <ul class=" text-white flex gap-6 font-medium [@media(max-width:1024px)]:hidden">
+    <li>PREMIUM</li>
+    <li>STARTER SITES</li>
+    <li>PRICING</li>
+   
+    <li>HELP</li>
+    <li>MORE</li>
+  </ul>
+  
+  <button class="bg-blue-400 w-28 h-12 text-white  ">
+    Free Downlod
+  </button>
+  </nav>
+  <section
+      class="bg-sky-800 text-white flex justify-evenly items-center p-12 [@media(max-width:1024px)]:flex-col"
+    >
+      <div class="flex flex-col gap-6">
+        <div> 
+          <h1 class="text-center text-white font-extrabold text-4xl ">
+            Blog Website Templates <br />
+          </h1>
+         
+        </div>
+        <div class="flex items-center gap-4 [@media(max-width:1024px)]:flex-col">
+          
+          <p class="text-sm font-medium text-center">
+            Start your blog with Blocksy's free, responsive templates, tailored for various
+            niches and ready to use.  <br />
+               Create engaging content effortlessly with designs
+            optimized for food, travel, personal, fashion, tech blogs, and more.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--هنا ناقص تصير بالنص -->
+    <ul class="flex items-center justify-evenly text-gray-500 text-center  gap-6 font-medium [@media(max-width:1024px)]:hidden">
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/">All</a></li>
+      <li  class="text-sky-500">Blog</li>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/business-templates/">Business</a></li>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/ecommerce-templates/">Ecommerce</a></li>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/news-templates/">News</li></a>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/nonprofit-templates/">Nonprofit</a></li>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/personal-templates/">Personal</a></li>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/portfolio-templates/">Portfolio</a></li>
+      <li><a href="https://creativethemes.com/blocksy/starter-sites/travel-templates/">Travel</a></li>
+    </ul>
+    <br>
+    <br>
+
+<hr>
+<br>
+    <br> 
+<div  class="flex items-center justify-center gap-6  max-2-h-screen bg-white [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]">
+  <div class="w-48 h-80  bg-white shadow-lg rounded-2xl overflow-hidden ">
+    <img class="w-full  object-cover" src="Image1.jpg" >  
+    
+  </div>
+  <div class="w-48 h-80  bg-white shadow-lg rounded-2xl overflow-hidden">
+    <img class="w-full  object-cover" src="Image2.jpg" > 
+</div>
+<div class="w-48 h-80  bg-white shadow-lg rounded-2xl overflow-hidden">
+  <img class="w-full  object-cover" src="Image3.jpg" > 
+</div>
+<div class="w-48 h-80  bg-white shadow-lg rounded-2xl overflow-hidden">
+  <img class="w-full  object-cover" src="Image4.jpg" > 
+</div>
+
+<br>
+</div>
+<div class="flex items-center justify-evenly  max-2-h-screen bg-white [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]">
+  <div class="order-3 mt-3 font-bold text-lg">Persona</div>
+  <div class="order-1 mt-3 font-bold text-lg">Daily News </div>
+  <div class="order-2 mt-3 font-bold text-lg">Restaurant</div>
+  <div class="order-2 mt-3 font-bold text-lg">Wedding</div>
+</div>
+<br>
+    <br>
+
+<!--*****footer ******-->
+
+<div class="bg-gray-300  [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]:gap-4">
+  <footer class="bg-gray-300 [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]:gap-4">             <br>
+    <br>
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-evenly  [@media(max-width:1024px)]:flex-col [@media(max-width:1024px)]:gap-4 ">
+            <div>
+                <h2 class="text-lg font-bold mb-4">Stay Informed with Early Updates!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Your Email Address"  >
+                    <button type="submit" class="bg-blue-400 w-28 h-12 text-white ">Subscribe</button>
+                </form>
+            </div>
+            <!--Link-->
+            <div>
+                <h2 class="text-lg font-bold mb-4 [@media(max-width:1024px)]:flex-col">Help & Support</h2>
+                <ul>
+                    <li><a href="https://creativethemes.com/blocksy/docs/" class="text-gray-600">Documentation</a></li>
+                    <li><a href="https://creativethemes.com/blocksy/support/" class="text-gray-600">Support</a></li>
+                    <li><a href="https://creativethemes.com/blocksy/video-tutorials/" class="text-gray-600">Video Tutorials</a></li>
+                    <li><a href="https://www.facebook.com/groups/blocksy.community" class="text-gray-600">Blocksy Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="text-lg font-bold mb-4">Useful Links</h2>
+                <ul>
+                    <li><a href="https://creativethemes.com/blocksy/premium/" class="text-gray-600 ">Blocksy Free</a></li>
+                    <li><a href="https://creativethemes.com/blocksy/pricing/#comparison-free-vs-pro" class="text-gray-600 ">Blocksy Pro</a></li>
+                    <li><a href="https://creativethemes.com/blocksy/starter-sites/" class="text-gray-600 ">Starter Sites</a></li>
+                    <li><a href="https://creativethemes.com/blocksy/companion/" class="text-gray-600 ">Blocksy Companion</a></li>
+                </ul>
+            </div>
+            <div>
+              <h2 class="text-lg font-bold mb-4">More</h2>
+              <ul>
+                  <li><a href="https://creativethemes.com/blocksy/changelog/" class="text-gray-600 ">Changelog</a></li>
+                  <li><a href="https://creativethemes.com/blocksy/affiliates/" class="text-gray-600 ">Affiliates</a></li>
+                  <li><a href="https://creativethemes.com/blocksy/docs/getting-started/child-theme/" class="text-gray-600 ">Child Theme</a></li>
+                  <li><a href="https://creativethemes.com/blocksy/docs/getting-started/child-theme/" class="text-gray-600 ">Recommendations</a></li>
+              </ul>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold mb-4">Company</h2>
+            <ul>
+                <li><a href="https://creativethemes.com/blocksy/about/" class="text-gray-600 ">Company</a></li>
+                <li><a href="https://creativethemes.com/blocksy/privacy-policy/" class="text-gray-600 ">Privacy Policy</a></li>
+                <li><a href="https://creativethemes.com/blocksy/terms-and-conditions/" class="text-gray-600 ">Terms & Conditions</a></li>
+  
+            </ul>
+        </div>
+        </div>
+    </div>
+     <!--********** Link **********-->
+    <div class="mt-10 border-t border-gray-200">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+            <p class="text-sm">Copyright © 2025 - WordPress Theme by Creative Themes</p>
+        </div>
+    </div>
+ </footer>
+</div>
+  
+</body>
+</html>
+
+
+
+<!-- 
+    <li class="dropdown relative">
+      <a href="#" class="">HELP</a>
+      <ul class="dropdown-menu absolute left-0 hidden bg-white shadow-lg mt-2 rounded">
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Documentation</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Support</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-100">Blocksy Community</a></li>
+      </ul>
+  </li>-->
+<!--
+<div class="flex items-center justify-evenly  max-2-h-screen bg-gray-100">
+<p>Daily News NEW Daily News provides a magazine-style <br>
+  layout with dark mode,
+   multi-language support</p>
+  <p>The restaurant's design emphasizes elegant dining.<br>
+     It uses a dark color scheme,
+     .</p>
+<p>Wedding offers a beautiful layout for showcasing wedding photos,<br>
+   perfect for agencies and personal events.
+   .</p>
+<p> Persona is tailored for design and film <br>
+  freelancers.It features a dark,.</p>
+
+</div>
+-->
